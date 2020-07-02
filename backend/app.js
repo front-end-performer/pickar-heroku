@@ -13,7 +13,6 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(express.static(path.join('public')));
-app.use(express.static(path.join('public', 'assets')));
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
