@@ -113,7 +113,7 @@ const LandinPage = () => {
 
     try {
       const getData = await sendRequest(
-        `https://v6.exchangerate-api.com/v6/0559f58491a3a244833cc16b/latest/${input.from}`,
+        `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/${input.from}`,
         'POST',
         {
           'Content-Type': 'application/json',
