@@ -46,13 +46,16 @@ const useStyles = makeStyles((theme) => ({
     ...theme.typography.span,
     fontSize: 12,
   },
+  paddingTop: {
+    paddingTop: 40,
+  },
 }));
 
 const HistoryList = (props) => {
   const classes = useStyles();
   if (props.items.length === 0) {
     return (
-      <div className='center'>
+      <div className={classes.paddingTop}>
         <Card>
           <h2>No conversions found.</h2>
         </Card>
