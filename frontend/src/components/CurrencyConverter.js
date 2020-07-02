@@ -148,7 +148,10 @@ const CurrencyConverter = (props) => {
             justify='center'
             className={classes.imgContainer}
           >
-            {/* <img src='./assets/switcher.png' alt='switcher icon' /> */}
+            <img
+              src='https://gallery-public.s3.eu-central-1.amazonaws.com/switcher.png'
+              alt='switcher icon'
+            />
           </Grid>
           <FormControl className={classes.margin}>
             <InputLabel shrink id='demo-simple-select-placeholder-label-label'>
