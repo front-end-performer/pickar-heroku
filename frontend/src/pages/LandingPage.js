@@ -129,7 +129,7 @@ const LandinPage = () => {
 
       try {
         await sendRequest(
-          'http://localhost:5000/api/conversions/convert',
+          process.env.REACT_APP_BACKEND_URL + '/conversions/convert',
           'POST',
           JSON.stringify({
             amount: inputAmount,

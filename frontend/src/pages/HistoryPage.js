@@ -52,7 +52,7 @@ const HistoryPage = () => {
     const fetchconvertHistory = async () => {
       try {
         const responseData = await sendRequest(
-          'http://localhost:5000/api/history'
+          process.env.REACT_APP_BACKEND_URL + '/history'
         );
 
         setLoadedData(responseData.conversions);
